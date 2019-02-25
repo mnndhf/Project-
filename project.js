@@ -24,6 +24,7 @@ function newElement() {
   p.appendChild(removeTask);
 
   //buat bikin button edit
+  
   var editTask = document.createElement("input");
   editTask.setAttribute("type", "button");
   editTask.setAttribute("value", "Edit");
@@ -37,14 +38,14 @@ function newElement() {
       x.setAttribute("value", p.children[0].innerHTML);
       p.appendChild(x);
       var saveTask = document.createElement("input");
+      var value = document.createElement(value)
       saveTask.setAttribute("type", "button");
       saveTask.setAttribute("value", "Save");
       saveTask.setAttribute("id", "SaveButton");
       saveTask.addEventListener(
         "click",
         function(e) {
-           
-        
+        p.children[0].innerHTML = input.value
         },
       );
       p.appendChild(saveTask);
@@ -53,5 +54,3 @@ function newElement() {
   );
   p.appendChild(editTask);
 }
-
-
